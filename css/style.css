@@ -55,9 +55,9 @@ a.GuidBar
 } 
 .Landing{
     max-width: 100%;
-    background: url("../img/deb28b93eeb15ef356bb26bec03d8c4c.jpeg"); 
+    background: url("../img/Background.webp"); 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     background-attachment: fixed;
     background-size: cover;
 }
