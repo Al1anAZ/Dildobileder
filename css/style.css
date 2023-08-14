@@ -1,0 +1,293 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+footer{
+    background: linear-gradient(135deg, #402E32 0%, #231F20 100%);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.HeaderContainer{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+html,body
+{
+    margin:  0;
+    padding: 0; 
+}
+.GuidBar
+{
+    height: inherit;
+    line-height: 2.8em;
+    margin-right: 6.72vw;
+    margin-left: 6.72vw;
+    text-align: right;
+}
+a.GuidBar
+{
+    margin-right: 0px;
+    margin-left: 1vw;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    
+}
+#Logo
+{
+    float: left;
+    margin-top: 16px;
+}
+#TextServices
+{
+    margin-right:0px;
+}
+.LandingGradient{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(114, 114, 114, 0));
+} 
+.Landing{
+    max-width: 100%;
+    background: url("../img/deb28b93eeb15ef356bb26bec03d8c4c.jpeg") no-repeat center; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+#LandingElements{
+    padding-top: 10vw;
+    padding-bottom: 5.729vw;
+    max-width: 920px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+.LandingText
+{  
+    position: relative;
+    font-size:72px;
+    margin: 0 auto;
+    text-indent: 10px;
+
+}
+p.LandingText
+{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 720px;
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-indent: 0px;
+} 
+.LandingButtons
+{
+    position: relative;
+    margin:  auto;
+    height: auto;
+    display: block; 
+    cursor: pointer;
+}
+button.LandingButtons
+{
+    width: 15.1717em;
+    height: 3.5em;
+    border: none;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%); 
+}
+.LandingButtonText
+{
+color: #FFF;
+font-size: 1.5rem;
+font-weight: 600;
+margin: 0;
+}
+img.LandingButtons
+{
+    margin-top: 15.625vw;
+}
+.Advantages
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; 
+    background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
+
+}
+.AdvantageArea
+{
+    padding-bottom: 100px;
+    margin: auto;
+    flex-grow: 1;
+    min-height: 395px;
+    max-width:  64.635vw;  
+    display: flex;
+    flex-wrap: wrap;
+}
+.Advantage
+{
+    display: flex;
+    flex-direction: column;
+    margin:  50px auto  0px;
+    width: 412px;
+    text-align:  center;
+}
+.AdvantageText
+{
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 7px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+h1.AdvantageText
+{
+    font-size: 24px;
+    font-family: "Ubuntu",sans-serif;
+}
+.AdvantageIcon
+{
+    margin: auto;
+}
+.OurServices{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; 
+    background: #fff;
+    /* ------------------------ */
+    text-align: center;
+    color: #231F20;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700; 
+    line-height: normal;
+}
+#OurServicesLINE{
+    max-width: 400px;
+    margin-top: 60px;
+}
+.OurServicesArea{
+    padding-top: 50px;
+    margin: 0px 5.208vw 0px 5.208vw;
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+.Service{
+    box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 400.662px;
+    border-radius: 5px;
+    text-align:  center;
+}
+.ServiceContent{
+    padding-bottom: 25px;
+}
+h1.ServiceContent{
+    font-family: 'Ubuntu',sans-serif; 
+    padding-bottom: 0px;
+    font-size: 24px; 
+    margin-bottom: 0; 
+    margin-top: 40px;
+}
+p.ServiceContent{
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 0px;
+    font-size:  20px;
+    font-weight: 300; 
+    width: 330px;
+    height: 72px; 
+    margin: auto; 
+    margin-top: 5px;
+}
+#ServiceContentGradient{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px; 
+    font-weight: 900; 
+    margin-top: 40px;
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 86%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+#Moretext{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 28px;
+    font-weight: 300;
+    color: rgba(122, 122, 122, 1); 
+}
+.FooterContainer{
+    padding-top: 30px;
+    font-size: 15px;
+    color: white;
+    margin: 0px 16vw 0px 16vw;
+    max-width: 1241px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1.FooterContacts{
+    font-size: 32px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+p.FooterContacts{
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.FooterNavigation{
+   margin-left: auto;
+   text-decoration: none;
+   color: #FFF;
+}
+h1.FooterNavigation{
+
+    font-size: 32px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+a.FooterNavigation{
+    line-height: 11px;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+}
+.FooterBottom{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #FFF solid 1px;
+    padding: 25px 0px 30px 0px;
+    width: 100%;
+}
+#FooterButton{
+    margin-right: 0;
+   height: 39px;
+   width: 166px;
+}
+#FooterButtonText{
+    font-size: 16px;
+}
