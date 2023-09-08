@@ -363,7 +363,7 @@ margin: 0;
     }
 }
 /*Для корректного отображение на телефоне горизонтально*/
-@media screen  and (max-width:  915px) and (orientation: landscape){
+@media screen  and (max-width:  1024px) and (orientation: landscape){
     .LandingElements img {
         margin-top: 0px;
     }
