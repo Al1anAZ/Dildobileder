@@ -95,7 +95,6 @@ font-size: 1.5rem;
 font-weight: 600;
 margin: 0;
 }
-/*Переделать ниже*/
 .Advantages{
     display: flex;
     flex-direction: column;
@@ -103,8 +102,7 @@ margin: 0;
     background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
 
 }
-.AdvantageArea
-{
+.Advantages > div{
     padding-bottom: 100px;
     margin: auto;
     flex-grow: 1;
@@ -113,40 +111,39 @@ margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
-.Advantage
-{
+.Advantage{
     display: flex;
     flex-direction: column;
     margin:  50px auto  0px;
     width: 412px;
     text-align:  center;
+    color: #fff;
 }
-.AdvantageText
-{
-    flex-grow: 1;
+.Advantage p{
     margin: 0;
     margin-top: 7px;
     font-family: "Roboto",sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: #fff;
 }
-h1.AdvantageText
-{
+.Advantage h1{
+    margin-bottom: 0;
     font-size: 24px;
     font-family: "Ubuntu",sans-serif;
 }
-.AdvantageIcon
-{
+.Advantage img{
     margin: auto;
+    width: 80px; 
+    height: 80px;
 }
 .OurServices{
-    display: flex;
-    flex-direction: column;
+    display: block;
     max-width: 100%; 
     background: #fff;
-    /* ------------------------ */
     text-align: center;
+}
+.OurServices > p{
+    margin: 0;
     color: #231F20;
     font-family: Ubuntu;
     font-size: 40px;
@@ -154,7 +151,7 @@ h1.AdvantageText
     font-weight: 700; 
     line-height: normal;
 }
-#OurServicesLINE{
+.OurServices > hr{
     max-width: 400px;
     margin-top: 60px;
 }
@@ -162,31 +159,30 @@ h1.AdvantageText
     padding-top: 50px;
     margin: 0px 5.208vw 0px 5.208vw;
     display: flex;
-    flex-wrap: wrap; 
+    flex-flow: wrap row;
 
 }
 .Service{
     box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    display: block;
+    margin:  auto;
     margin-top: 0;
     margin-bottom: 20px;
     width: 400.662px;
     border-radius: 5px;
     text-align:  center;
 }
-.ServiceContent{
+.Service span{
     padding-bottom: 25px;
 }
-h1.ServiceContent{
+.Service h1{
     font-family: 'Ubuntu',sans-serif; 
     padding-bottom: 0px;
     font-size: 24px; 
     margin-bottom: 0; 
     margin-top: 40px;
 }
-p.ServiceContent{
+.Service p{
     font-family: 'Roboto', sans-serif; 
     padding-bottom: 0px;
     font-size:  20px;
@@ -216,14 +212,11 @@ p.ServiceContent{
 }
 .FooterContainer{
     padding-top: 30px;
-    font-size: 15px;
-    color: white;
     margin: 0px 16vw 0px 16vw;
-    max-width: 1241px;
     display: flex;
     flex-wrap: wrap;
 }
-h1.FooterContacts{
+.FooterContacts h1{
     font-size: 32px;
     font-weight: 600;
     background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
@@ -231,19 +224,16 @@ h1.FooterContacts{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-p.FooterContacts{
-
+.FooterContacts p{
+    color: white;
     font-family: 'Roboto',sans-serif;
     font-size: 20px;
     font-weight: 300;
 }
 .FooterNavigation{
    margin-left: auto;
-   text-decoration: none;
-   color: #FFF;
 }
-h1.FooterNavigation{
-
+.FooterNavigation h1{
     font-size: 32px;
     font-weight: 600;
     background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
@@ -251,9 +241,14 @@ h1.FooterNavigation{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-a.FooterNavigation{
+.FooterNavigation > div{
+    text-align: right; 
+    margin-bottom: 10px;
+}
+.FooterNavigation a{
+    color: #FFF;
+    text-decoration: none;
     line-height: 11px;
-
     font-family: 'Roboto',sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -261,16 +256,14 @@ a.FooterNavigation{
 }
 .FooterBottom{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     border-top: #FFF solid 1px;
+    color: #FFF;
     padding: 25px 0px 30px 0px;
     width: 100%;
 }
 #FooterButton{
-    margin-right: 0;
+   border-radius: 13px;
    height: 39px;
    width: 166px;
-}
-#FooterButtonText{
-    font-size: 16px;
 }
