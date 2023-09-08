@@ -271,17 +271,9 @@ margin: 0;
    height: 39px;
    width: 166px;
 }
-/*Для корректного отображение при сжатии окна*/
-@media screen  and (min-width:  1024px) and (max-height: 900px){
-    .LandingText h1{
-        font-size: 45px;
-    }
-     .Landing{
-        height: 100%;
-     }
-}
-/*Для корректного отображение на планшете вертикально*/
-@media screen and (min-width: 1024px) and (orientation: landscape){
+
+/*Для корректного отображение на планшете горизонтально*/
+@media screen and (max-width: 1024px) and (orientation: landscape){
     .Landing{
         height: 100vh;
      }
@@ -308,7 +300,16 @@ margin: 0;
         display: none;
     }
 }
-/*Для корректного отображение на планшете*/
+/*Для корректного отображение при сжатии окна*/
+@media screen  and (min-width:  1024px) and (max-height: 900px){
+    .LandingText h1{
+        font-size: 45px;
+    }
+     .Landing{
+        height: 100%;
+     }
+}
+/*Для корректного отображение на планшете вертикально*/
 @media screen and (min-height: 1024px) and (orientation: portrait){
     .LandingText h1{
         padding-top: 80px;
@@ -335,7 +336,7 @@ margin: 0;
     }
     
 }
-/*Для корректного отображение на телефоне вертикально горизонтально*/
+/*Для корректного отображение на телефоне горизонтально*/
 @media screen and (max-width: 600px) and (orientation: portrait){
      .HeaderContainer ul{
         display: none;
@@ -374,7 +375,7 @@ margin: 0;
         display: none;
     }
 }
-/*Для корректного отображение на телефоне горизонтально*/
+/*Для корректного отображение на телефоне вертикально*/
 @media screen  and (max-width:  1023px) and (orientation: landscape){
     .LandingElements img {
         margin-top: 0px;
