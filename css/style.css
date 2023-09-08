@@ -271,8 +271,20 @@ margin: 0;
    height: 39px;
    width: 166px;
 }
+/*Для корректного отображение при сжатии окна*/
+@media screen  and (min-width:  1024px) and (max-height: 900px){
+    .LandingText h1{
+        font-size: 45px;
+    }
+     .Landing{
+        height: 100%;
+     }
+}
 /*Для корректного отображение на планшете вертикально*/
 @media screen and (min-width: 1024px) and (orientation: landscape){
+    .Landing{
+        height: 100vh;
+     }
     .FooterNavigation{
         display: none;
     }
@@ -363,7 +375,7 @@ margin: 0;
     }
 }
 /*Для корректного отображение на телефоне горизонтально*/
-@media screen  and (max-width:  1024px) and (orientation: landscape){
+@media screen  and (max-width:  1023px) and (orientation: landscape){
     .LandingElements img {
         margin-top: 0px;
     }
@@ -379,15 +391,6 @@ margin: 0;
     .HeaderContainer ul{
         display: none;
      }
-     .Landing{
-        height: 100%;
-     }
-}
-/*Для корректного отображение при сжатии окна*/
-@media screen  and (min-width:  1024px) and (max-height: 900px){
-    .LandingText h1{
-        font-size: 45px;
-    }
      .Landing{
         height: 100%;
      }
