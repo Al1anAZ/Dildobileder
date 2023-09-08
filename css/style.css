@@ -267,3 +267,46 @@ margin: 0;
    height: 39px;
    width: 166px;
 }
+@media screen and (max-width: 1024px) {
+    .FooterNavigation{
+        display: none;
+    }
+    .FooterBottom img{
+        margin: auto;
+    }
+    .FooterBottom span{
+        text-align: center;
+
+    }
+    .FooterBottom{
+        flex-direction: column;
+    }
+    #FooterButton{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Landing{
+        background-attachment: scroll;
+    }
+    .OurServices > hr{
+        max-width: 300px;
+    }
+    .FooterNavigation{
+        display: none;
+    }
+    .FooterBottom img{
+        margin: auto;
+    }
+    .FooterBottom span{
+        text-align: center;
+
+    }
+    .FooterBottom{
+        flex-direction: column;
+
+    }
+    #FooterButton{
+        display: none;
+    }
+  }
