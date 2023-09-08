@@ -52,10 +52,14 @@ footer{
 }
 .LandingElements{
     padding-top: 10vw;
+    padding-bottom: 5.729vw;
     max-width: 920px;
     color: #fff;
     margin: auto;
     text-align: center;
+}
+.LandingElements img{
+    margin-top: 10vw;
 }
 .LandingText h1{
     font-size:72px;
@@ -267,7 +271,40 @@ margin: 0;
    height: 39px;
    width: 166px;
 }
-@media screen and (max-width: 1024px) {
+/*Для корректного отображение на планшете вертикально*/
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .FooterNavigation{
+        display: none;
+    }
+    .FooterBottom img{
+        margin: auto;
+    }
+    .FooterBottom span{
+        text-align: center;
+
+    }
+    .LandingText h1{
+        font-size: 75px;
+    }
+    .LandingText p{
+        font-size: 25px;
+    }
+    .FooterBottom{
+        flex-direction: column;
+    }
+    #FooterButton{
+        display: none;
+    }
+}
+/*Для корректного отображение на планшете*/
+@media screen and (min-height: 1024px) and (orientation: portrait){
+    .LandingText h1{
+        padding-top: 80px;
+        font-size: 45px;
+    }
+    .LandingText p{
+        font-size: 20px;
+    }
     .FooterNavigation{
         display: none;
     }
@@ -284,14 +321,19 @@ margin: 0;
     #FooterButton{
         display: none;
     }
+    
 }
-@media screen and (max-width: 600px){
+/*Для корректного отображение на телефоне вертикально горизонтально*/
+@media screen and (max-width: 600px) and (orientation: portrait){
      .HeaderContainer ul{
         display: none;
      }
      .LandingElements{
         padding-bottom: 0;
      }
+     .LandingText p{
+        font-size: 20px;
+    }
     .LandingText h1{
         margin-top: 50px;
         font-size: 45px;
@@ -320,16 +362,32 @@ margin: 0;
         display: none;
     }
 }
-@media screen  and (max-width:  915px) and (max-height: 700px){
+/*Для корректного отображение на телефоне горизонтально*/
+@media screen  and (max-width:  915px) and (orientation: landscape){
+    .LandingElements img {
+        margin-top: 0px;
+    }
     .Landing{
         background-attachment: scroll;
     }
     .LandingText h1{
         font-size: 45px;
     }
+    .LandingText p{
+        font-size: 20px;
+    }
     .HeaderContainer ul{
         display: none;
      }
+     .Landing{
+        height: 100%;
+     }
+}
+/*Для корректного отображение при сжатии окна*/
+@media screen  and (min-width:  1024px) and (max-height: 625px){
+    .LandingText h1{
+        font-size: 45px;
+    }
      .Landing{
         height: 100%;
      }
