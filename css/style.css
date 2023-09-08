@@ -43,6 +43,7 @@ footer{
 }
 .Landing{
     max-width: 100%;
+    height: 100vh;
     background: url("../img/Background.webp"); 
     background-repeat: no-repeat;
     background-position: center; 
@@ -51,7 +52,6 @@ footer{
 }
 .LandingElements{
     padding-top: 10vw;
-    padding-bottom: 5.729vw;
     max-width: 920px;
     color: #fff;
     margin: auto;
@@ -285,7 +285,17 @@ margin: 0;
         display: none;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
+     .HeaderContainer ul{
+        display: none;
+     }
+     .LandingElements{
+        padding-bottom: 0;
+     }
+    .LandingText h1{
+        margin-top: 50px;
+        font-size: 45px;
+    }
     .Landing{
         background-attachment: scroll;
     }
@@ -309,4 +319,18 @@ margin: 0;
     #FooterButton{
         display: none;
     }
-  }
+}
+@media screen  and (max-width:  915px) and (max-height: 700px){
+    .Landing{
+        background-attachment: scroll;
+    }
+    .LandingText h1{
+        font-size: 45px;
+    }
+    .HeaderContainer ul{
+        display: none;
+     }
+     .Landing{
+        height: 100%;
+     }
+}
