@@ -1,418 +1,447 @@
-*{
-    font-family: "Inter", sans-serif;
-    font-size: 100%;
+@charset "UTF-8";
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
 }
-html,body{
-    margin:  0;
-    padding: 0; 
-}
-header{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-footer{
-    background: linear-gradient(135deg, #402E32 0%, #231F20 100%);
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-.HeaderContainer{
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    height: 56px;
-}
-.HeaderContainer ul{
-    list-style-type: none; 
-    display: inline;
-}
-.HeaderContainer li{
-   float:  right;
-   margin-right: 1vw;
-   margin-top: 16px;
-}
-.HeaderContainer li:first-child{
-    margin-right: 6.72vw;
-}
-.HeaderContainer a{
-    font-size: 1.25em;
-    font-weight: 300;
-    color: white;
-    text-decoration: none;
-}
-.Landing{
-    max-width: 100%;
-    height: 100vh;
-    background: url("../img/Background.webp"); 
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-attachment: fixed;
-    background-size: cover;
-}
-.LandingElements{
-    padding-top: 10vw;
-    padding-bottom: 5.729vw;
-    max-width: 920px;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-}
-.LandingElements img{
-    margin-top: 10vw;
-}
-.LandingText h1{
-    font-size:72px;
-    margin: 0 auto;
-    text-indent: 10px;
-}
-.LandingText p{
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    max-width: 720px;
-    font-size: 24px;
-    font-family: "Roboto";
-    font-weight: 300;
-    text-indent: 0px;
-} 
-.LandingButtons button{
-    cursor: pointer;
-    margin:  auto;
-    display: block; 
-    width: 15.1717em;
-    height: 3.5em;
-    border: none;
-    border-radius: 1.25rem;
-    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%); 
-}
-.LandingButtons img{
-    cursor: pointer;
-    margin-top: 15.625vw;
-    width: 3.74613rem;
-    height: 3.75756rem;
-}
-.LandingButtons p{
-color: #FFF;
-font-size: 1.5rem;
-font-weight: 600;
-margin: 0;
-}
-.Advantages{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%; 
-    background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
 
+html, body {
+  margin: 0;
+  padding: 0;
 }
-.Advantages > div{
-    padding-bottom: 100px;
-    margin: auto;
-    flex-grow: 1;
-    min-height: 395px;
-    max-width:  64.635vw;  
-    display: flex;
-    flex-wrap: wrap;
-}
-.Advantage{
-    display: flex;
-    flex-direction: column;
-    margin:  50px auto  0px;
-    width: 412px;
-    text-align:  center;
-    color: #fff;
-}
-.Advantage p{
-    margin: 0;
-    margin-top: 7px;
-    font-family: "Roboto",sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-}
-.Advantage h1{
-    margin-bottom: 0;
-    font-size: 24px;
-    font-family: "Ubuntu",sans-serif;
-}
-.Advantage img{
-    margin: auto;
-    width: 80px; 
-    height: 80px;
-}
-.OurServices{
-    display: block;
-    max-width: 100%; 
-    background: #fff;
-    text-align: center;
-}
-.OurServices > p{
-    margin: 0;
-    color: #231F20;
-    font-family: Ubuntu;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700; 
-    line-height: normal;
-}
-.OurServices > hr{
-    max-width: 400px;
-    margin-top: 60px;
-}
-.OurServicesArea{
-    padding-top: 50px;
-    margin: 0px 5.208vw 0px 5.208vw;
-    display: flex;
-    flex-flow: wrap row;
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
-.Service{
-    box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
-    display: block;
-    margin:  auto;
-    margin-top: 0;
-    margin-bottom: 20px;
-    width: 400.662px; 
-    border-radius: 5px;
-    text-align:  center;
+
+footer {
+  background: linear-gradient(135deg, #402E32 0%, #231F20 100%);
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
-.Service span{
-    padding-bottom: 25px;
+
+.HeaderContainer {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 56px;
 }
-.Service h1{
-    font-family: 'Ubuntu',sans-serif; 
-    padding-bottom: 0px;
-    font-size: 24px; 
-    margin-bottom: 0; 
-    margin-top: 2.083vw;
+.HeaderContainer ul {
+  list-style-type: none;
+  display: inline;
 }
-.Service p{
-    font-family: 'Roboto', sans-serif; 
-    padding-bottom: 0px;
-    font-size:  20px;
-    font-weight: 300; 
-    width: 330px;
-    height: 72px; 
-    margin: auto; 
-    margin-top: 5px;
+.HeaderContainer li {
+  float: right;
+  margin-right: 1vw;
+  margin-top: 16px;
 }
-#ServiceContentGradient{
-    font-family: 'Roboto', sans-serif; 
-    font-size: 30px; 
-    font-weight: 900; 
-    margin-top: 2.083vw;
-    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 86%);
-    background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+.HeaderContainer li:first-child {
+  margin-right: 6.72vw;
 }
-#Moretext{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Ubuntu', sans-serif; 
-    font-size: 28px;
-    font-weight: 300;
-    color: rgba(122, 122, 122, 1); 
+.HeaderContainer a {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
 }
-.FooterContainer{
-    padding-top: 30px;
-    margin: 0px 16vw 0px 16vw;
-    display: flex;
-    flex-wrap: wrap;
+
+.Landing {
+  max-width: 100%;
+  height: 100vh;
+  background: url("../img/Background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.FooterContacts h1{
-    font-size: 32px;
-    font-weight: 600;
-    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+
+.LandingElements {
+  padding-top: 10vw;
+  padding-bottom: 5.729vw;
+  max-width: 920px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
 }
-.FooterContacts p{
-    color: white;
-    font-family: 'Roboto',sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+.LandingElements img {
+  margin-top: 10vw;
 }
-.FooterNavigation{
-   margin-left: auto;
+
+.LandingText h1 {
+  font-size: 72px;
+  margin: 0 auto;
+  text-indent: 10px;
 }
-.FooterNavigation h1{
-    font-size: 32px;
-    font-weight: 600;
-    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+.LandingText p {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  max-width: 720px;
+  text-indent: 0px;
 }
-.FooterNavigation > div{
-    text-align: right; 
-    margin-bottom: 10px;
+
+.LandingButtons button {
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  width: 15.1717em;
+  height: 3.5em;
+  border: none;
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgb(255, 153, 41) 0%, rgb(252, 138, 200) 100%);
 }
-.FooterNavigation a{
-    color: #FFF;
-    text-decoration: none;
-    line-height: 11px;
-    font-family: 'Roboto',sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: right;
+.LandingButtons img {
+  cursor: pointer;
+  margin-top: 15.625vw;
+  width: 3.74613rem;
+  height: 3.75756rem;
 }
-.FooterBottom{
-    display: flex;
-    flex-direction: row;
-    border-top: #FFF solid 1px;
-    color: #FFF;
-    padding: 25px 0px 30px 0px;
-    width: 100%;
+.LandingButtons p {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
 }
-#FooterButton{
-   border-radius: 13px;
-   height: 39px;
-   width: 166px;
+
+.Advantages {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
+}
+.Advantages > div {
+  padding-bottom: 100px;
+  margin: auto;
+  min-height: 395px;
+  max-width: 64.635vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.Advantage {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 0px;
+  width: 412px;
+  text-align: center;
+  color: #fff;
+}
+.Advantage p {
+  margin: 0;
+  margin-top: 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.Advantage h1 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+}
+.Advantage img {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.OurServices {
+  display: block;
+  max-width: 100%;
+  background: #fff;
+  text-align: center;
+}
+.OurServices > p {
+  margin: 0;
+  color: #231F20;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.OurServices > hr {
+  max-width: 400px;
+  margin-top: 60px;
+}
+
+.OurServicesArea {
+  padding-top: 50px;
+  margin: 0px 5.208vw 0px 5.208vw;
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.Service {
+  box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 400.662px;
+  border-radius: 5px;
+  text-align: center;
+}
+.Service span {
+  padding-bottom: 25px;
+}
+.Service h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  margin-top: 2.083vw;
+}
+.Service p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 0px;
+  width: 330px;
+  height: 72px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#ServiceContentGradient {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 2.083vw;
+  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 86%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Moretext {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: rgb(122, 122, 122);
+}
+
+.FooterContainer {
+  padding-top: 30px;
+  margin: 0px 16vw 0px 16vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FooterContacts h1 {
+  font-size: 32px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.FooterContacts p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.FooterNavigation {
+  margin-left: auto;
+}
+.FooterNavigation h1 {
+  font-size: 32px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.FooterNavigation > div {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.FooterNavigation a {
+  color: #FFF;
+  text-decoration: none;
+  line-height: 11px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.FooterBottom {
+  display: flex;
+  flex-direction: row;
+  border-top: #FFF solid 1px;
+  color: #FFF;
+  padding: 25px 0px 30px 0px;
+  width: 100%;
+}
+
+#FooterButton {
+  border-radius: 13px;
+  height: 39px;
+  width: 166px;
 }
 
 /*Для корректного отображение на планшете горизонтально*/
-@media screen and (max-width: 1024px) and (orientation: landscape){
-    .Landing{
-        height: 100vh;
-     }
-    .FooterNavigation{
-        display: none;
-    }
-    .FooterBottom img{
-        margin: auto;
-    }
-    .FooterBottom span{
-        text-align: center;
-
-    }
-    .LandingText h1{
-        font-size: 75px;
-    }
-    .LandingText p{
-        font-size: 25px;
-    }
-    .FooterBottom{
-        flex-direction: column;
-    }
-    #FooterButton{
-        display: none;
-    }
+@media screen and (max-width: 1114px) and (orientation: landscape) {
+  .Landing {
+    height: 100vh;
+  }
+  .FooterNavigation {
+    display: none;
+  }
+  .FooterNavigation img {
+    margin: auto;
+  }
+  .FooterNavigation span {
+    text-align: center;
+  }
+  .LandingText h1 {
+    font-size: 75px;
+  }
+  .LandingText p {
+    font-size: 25px;
+  }
+  .FooterBottom {
+    flex-direction: column;
+  }
+  .FooterBottom img {
+    margin: auto;
+  }
+  .FooterBottom span {
+    text-align: center;
+  }
+  #FooterButton {
+    display: none;
+  }
 }
 /*Для корректного отображение при сжатии окна*/
-@media screen  and (min-width:  1024px) and (max-height: 900px){
-    .LandingText h1{
-        font-size: 45px;
-    }
-     .Landing{
-        height: 100%;
-     }
+@media screen and (min-width: 1024px) and (max-height: 900px) {
+  .LandingText h1 {
+    font-size: 45px;
+  }
+  .Landing {
+    height: 100%;
+  }
 }
 /*Для корректного отображение на планшете вертикально*/
-@media screen and (min-height: 1024px) and (orientation: portrait){
-    .LandingText h1{
-        padding-top: 80px;
-        font-size: 45px;
-    }
-    .LandingText p{
-        font-size: 20px;
-    }
-    .FooterNavigation{
-        display: none;
-    }
-    .FooterBottom img{
-        margin: auto;
-    }
-    .FooterBottom span{
-        text-align: center;
-
-    }
-    .FooterBottom{
-        flex-direction: column;
-    }
-    #FooterButton{
-        display: none;
-    }
-    
+@media screen and (min-height: 1024px) and (orientation: portrait) {
+  .LandingText h1 {
+    padding-top: 80px;
+    font-size: 45px;
+  }
+  .LandingText p {
+    font-size: 20px;
+  }
+  .FooterNavigation {
+    display: none;
+  }
+  .FooterBottom {
+    flex-direction: column;
+  }
+  .FooterBottom img {
+    margin: auto;
+  }
+  .FooterBottom span {
+    text-align: center;
+  }
+  #FooterButton {
+    display: none;
+  }
 }
 /*Для корректного отображение на телефоне вертикально*/
-@media screen and (max-width: 600px) and (orientation: portrait){
-     .Service{
-       width:  250.331px;
-    }
-    .Service p{
-        font-size: 15px;
-        width: 225px;
-    }
-    .Service h1{
-        font-size: 20px;
-    }
-     .HeaderContainer ul{
-        display: none;
-     }
-     .LandingElements{
-        padding-bottom: 0;
-     }
-     .LandingText p{
-        font-size: 20px;
-    }
-    .LandingText h1{
-        margin-top: 50px;
-        font-size: 45px;
-    }
-    .Landing{
-        background-attachment: scroll;
-    }
-    .OurServices > hr{
-        max-width: 300px;
-    }
-    .FooterNavigation{
-        display: none;
-    }
-    .FooterBottom img{
-        margin: auto;
-    }
-    .FooterBottom span{
-        text-align: center;
-
-    }
-    .FooterBottom{
-        flex-direction: column;
-
-    }
-    #FooterButton{
-        display: none;
-    }
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .Service {
+    width: 250.331px;
+  }
+  .Service p {
+    font-size: 15px;
+    width: 225px;
+  }
+  .Service h1 {
+    font-size: 20px;
+  }
+  .HeaderContainer ul {
+    display: none;
+  }
+  .LandingElements {
+    padding-bottom: 0;
+  }
+  .LandingText p {
+    font-size: 20px;
+  }
+  .LandingText h1 {
+    margin-top: 50px;
+    font-size: 45px;
+  }
+  .Landing {
+    background-attachment: scroll;
+  }
+  .OurServices > hr {
+    max-width: 300px;
+  }
+  .FooterNavigation {
+    display: none;
+  }
+  .FooterBottom {
+    flex-direction: column;
+  }
+  .FooterBottom img {
+    margin: auto;
+  }
+  .FooterBottom span {
+    text-align: center;
+  }
+  #FooterButton {
+    display: none;
+  }
 }
 /*Для корректного отображение на телефоне горизонтально*/
-@media screen  and (max-width:  1023px) and (orientation: landscape){
-    .Service{
-        width:  300.331px;
-     }
-     .Service p{
-        font-size: 15px;
-        width: 250px;
-    }
-    .Service h1{
-        font-size: 20px;
-    }
-    .LandingElements img {
-        margin-top: 0px;
-    }
-    .Landing{
-        background-attachment: scroll;
-    }
-    .LandingText h1{
-        font-size: 45px;
-    }
-    .LandingText p{
-        font-size: 20px;
-    }
-    .HeaderContainer ul{
-        display: none;
-     }
-     .Landing{
-        height: 100%;
-     }
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .Service {
+    width: 300.331px;
+  }
+  .Service p {
+    font-size: 15px;
+    width: 250px;
+  }
+  .Service h1 {
+    font-size: 20px;
+  }
+  .LandingElements img {
+    margin-top: 0px;
+  }
+  .Landing {
+    background-attachment: scroll;
+    height: 100%;
+  }
+  .LandingText h1 {
+    font-size: 45px;
+  }
+  .LandingText p {
+    font-size: 20px;
+  }
+  .HeaderContainer ul {
+    display: none;
+  }
+  .FooterBottom {
+    flex-direction: column;
+  }
+  .FooterBottom img {
+    margin: auto;
+  }
+  .FooterBottom span {
+    text-align: center;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

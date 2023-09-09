@@ -1,0 +1,483 @@
+$Ubuntu : "Ubuntu",sans-serif;
+$Roboto : "Roboto",sans-serif;
+*{
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+}
+html,body{
+    margin:  0;
+    padding: 0; 
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+footer{
+    background: linear-gradient(135deg, #402E32 0%, #231F20 100%);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.HeaderContainer{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    ul{
+        list-style-type: none; 
+        display: inline;
+    }
+    li{
+        float:  right;
+        margin-right: 1vw;
+        margin-top: 16px;
+     }
+     li:first-child{
+        margin-right: 6.72vw;
+    }
+    a{
+        font-size: 1.25em;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+} 
+.Landing{
+    max-width: 100%;
+    height: 100vh;
+    background: url("../img/Background.webp"); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+.LandingElements{
+    padding-top: 10vw;
+    padding-bottom: 5.729vw;
+    max-width: 920px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    img{
+        margin-top: 10vw;
+    }
+}
+.LandingText{
+    h1{
+        font-size:72px;
+        margin: 0 auto;
+        text-indent: 10px;
+    }
+    p{
+        margin: {
+            right: auto;
+            left: auto;
+            top: 10px;
+            bottom: 30px;
+        };
+        font: {
+            size: 24px;
+            family: $Roboto;
+            weight: 300;
+        };
+        max-width: 720px;
+        text-indent: 0px;
+    } 
+}
+.LandingButtons{ 
+    button{
+    cursor: pointer;
+    margin:  auto;
+    display: block; 
+    width: 15.1717em;
+    height: 3.5em;
+    border: none;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%);
+   }
+   img{
+    cursor: pointer;
+    margin-top: 15.625vw;
+    width: 3.74613rem;
+    height: 3.75756rem;
+   }
+   p{
+    color: #FFF;
+    font: {
+        size: 1.5rem;
+        weight: 600;
+    }
+    margin: 0;
+    }
+}
+.Advantages{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; 
+    background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
+    > div{
+        padding-bottom: 100px;
+        margin: auto;
+        min-height: 395px;
+        max-width:  64.635vw;  
+        display: flex;
+        flex: {
+            wrap: wrap;
+            grow: 1;
+        }
+    }
+
+}
+.Advantage{
+    display: flex;
+    flex-direction: column;
+    margin:  50px auto  0px;
+    width: 412px;
+    text-align:  center;
+    color: #fff;
+    p{
+        margin: 0;
+        margin-top: 7px;
+        font: {
+            family: $Roboto;
+            weight: 300;
+            size: 20px;
+        } 
+    }
+    h1{
+        margin-bottom: 0;
+        font: {
+            size: 24px;
+            family: $Ubuntu;
+        }
+    }
+    img{
+        margin: auto;
+        width: 80px; 
+        height: 80px;
+    }
+}
+.OurServices{
+    display: block;
+    max-width: 100%; 
+    background: #fff;
+    text-align: center;
+    > p{
+        margin: 0;
+        color: #231F20;
+        font: {
+            family: $Ubuntu;
+            size: 40px;
+            style: normal;
+            weight: 700; 
+        }
+        line-height: normal;
+    }
+    > hr{
+        max-width: 400px;
+        margin-top: 60px;
+    }
+}
+.OurServicesArea{
+    padding-top: 50px;
+    margin: 0px 5.208vw 0px 5.208vw;
+    display: flex;
+    flex-flow: wrap row;
+}
+.Service{
+    box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
+    display: block;
+    margin:  auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 400.662px; 
+    border-radius: 5px;
+    text-align:  center;
+    span{
+        padding-bottom: 25px;
+    }
+    h1{
+        font: {
+            family: $Ubuntu; 
+            size: 24px; 
+        }
+        padding-bottom: 0px;
+        margin-bottom: 0; 
+        margin-top: 2.083vw;
+    }
+    p{
+        font: {
+            family: $Roboto; 
+            size:  20px;
+            weight: 300; 
+        }
+        padding-bottom: 0px;
+        width: 330px;
+        height: 72px; 
+        margin: auto; 
+        margin-top: 5px;
+    }
+}
+#ServiceContentGradient{
+    font: {
+        family: $Roboto; 
+        size: 30px; 
+        weight: 900; 
+    }
+    margin-top: 2.083vw;
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 86%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+#Moretext{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: {
+        family: $Ubuntu;
+        size: 28px;
+        weight: 300;
+    }
+    color: rgba(122, 122, 122, 1); 
+}
+.FooterContainer{
+    padding-top: 30px;
+    margin: 0px 16vw 0px 16vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FooterContacts{
+    h1{
+        font: {
+            size: 32px;
+            weight: 600;
+        }
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    p{
+        color: white;
+        font: {
+            family: $Roboto;
+            size: 20px;
+            weight: 300;
+        }
+    }
+}
+.FooterNavigation{
+   margin-left: auto;
+   h1{
+    font: {
+        size: 32px;
+        weight: 600;
+    }
+    background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+   > div{
+    text-align: right; 
+    margin-bottom: 10px;
+  }
+  a{
+    color: #FFF;
+    text-decoration: none;
+    line-height: 11px;
+    font: {
+        family: $Roboto;
+        size: 20px;
+        weight: 300;
+    }
+    text-align: right;
+   }
+}
+.FooterBottom{
+    display: flex;
+    flex-direction: row;
+    border-top: #FFF solid 1px;
+    color: #FFF;
+    padding: 25px 0px 30px 0px;
+    width: 100%;
+}
+#FooterButton{
+   border-radius: 13px;
+   height: 39px;
+   width: 166px;
+}
+
+/*Для корректного отображение на планшете горизонтально*/
+@media screen and (max-width: 1114px) and (orientation: landscape){
+    .Landing{
+        height: 100vh;
+     }
+    .FooterNavigation{
+        display: none;
+        img{
+            margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    .LandingText{ 
+        h1{
+        font-size: 75px
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+    .FooterBottom{
+        flex-direction: column;
+        img{
+        margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    #FooterButton{
+        display: none;
+    }
+}
+/*Для корректного отображение при сжатии окна*/
+@media screen  and (min-width:  1024px) and (max-height: 900px){
+    .LandingText {
+        h1{
+        font-size: 45px;
+        }
+    }
+     .Landing{
+        height: 100%;
+     }
+}
+/*Для корректного отображение на планшете вертикально*/
+@media screen and (min-height: 1024px) and (orientation: portrait){
+    .LandingText{ 
+        h1{
+        padding-top: 80px;
+        font-size: 45px;
+       }
+       p{
+        font-size: 20px;
+       } 
+    }
+    .FooterNavigation{
+        display: none;
+    }
+    .FooterBottom{
+        flex-direction: column;
+        img{
+        margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    #FooterButton{
+        display: none;
+    }
+    
+}
+/*Для корректного отображение на телефоне вертикально*/ 
+@media screen and (max-width: 600px) and (orientation: portrait){
+     .Service{
+       width:  250.331px;
+       p{
+        font-size: 15px;
+        width: 225px;
+       }
+       h1{
+        font-size: 20px;
+        }
+    }
+     .HeaderContainer {   
+        ul{
+        display: none;
+        }
+     }
+     .LandingElements{
+        padding-bottom: 0;
+     }
+     .LandingText {
+        p{
+        font-size: 20px;
+        }
+        h1{
+            margin-top: 50px;
+            font-size: 45px;
+        }
+    }
+    .Landing{
+        background-attachment: scroll;
+    }
+    .OurServices{
+        > hr{
+        max-width: 300px;
+        }
+    }
+    .FooterNavigation{
+        display: none;
+    }
+    .FooterBottom{
+        flex-direction: column;
+        img{
+            margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    #FooterButton{
+        display: none;
+    }
+}
+/*Для корректного отображение на телефоне горизонтально*/
+@media screen  and (max-width:  1023px) and (orientation: landscape){
+    .Service{
+        width:  300.331px;
+        p{
+            font-size: 15px;
+            width: 250px;
+        }
+        h1{
+            font-size: 20px;
+        }
+     }
+    .LandingElements{
+        img {
+        margin-top: 0px;
+        }
+    }
+    .Landing{
+        background-attachment: scroll;
+        height: 100%;
+    }
+    .LandingText{
+        h1{
+        font-size: 45px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .HeaderContainer{
+        ul{
+        display: none;
+         }
+
+     }
+     .FooterBottom{
+        flex-direction: column;
+        img{
+            margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+}
