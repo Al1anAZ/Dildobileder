@@ -1,4 +1,20 @@
 @charset "UTF-8";
+.Buttons, #FooterButton, .LandingButtons button {
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  border: none;
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgb(255, 153, 41) 0%, rgb(252, 138, 200) 100%);
+}
+
+.LandingButtonTxt p, #FooterButton p, .LandingButtons p {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
 * {
   font-family: "Inter", sans-serif;
   font-size: 100%;
@@ -87,26 +103,14 @@ footer {
 }
 
 .LandingButtons button {
-  cursor: pointer;
-  margin: auto;
-  display: block;
   width: 15.1717em;
   height: 3.5em;
-  border: none;
-  border-radius: 1.25rem;
-  background: linear-gradient(90deg, rgb(255, 153, 41) 0%, rgb(252, 138, 200) 100%);
 }
 .LandingButtons img {
   cursor: pointer;
   margin-top: 15.625vw;
   width: 3.74613rem;
   height: 3.75756rem;
-}
-.LandingButtons p {
-  color: #FFF;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0;
 }
 
 .Advantages {

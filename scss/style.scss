@@ -30,6 +30,24 @@ $Roboto : "Roboto",sans-serif;
     }
    }
 }
+.Buttons{
+    cursor: pointer;
+    margin:  auto;
+    display: block; 
+    border: none;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%);
+}
+.LandingButtonTxt{
+    p{
+        color: #FFF;
+        font: {
+            size: 1.5rem;
+            weight: 600;
+        }
+        margin: 0;
+    }
+}
 *{
     font-family: "Inter", sans-serif;
     font-size: 100%;
@@ -117,14 +135,9 @@ footer{
 }
 .LandingButtons{ 
     button{
-    cursor: pointer;
-    margin:  auto;
-    display: block; 
+    @extend .Buttons; 
     width: 15.1717em;
     height: 3.5em;
-    border: none;
-    border-radius: 1.25rem;
-    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%);
    }
    img{
     cursor: pointer;
@@ -132,14 +145,7 @@ footer{
     width: 3.74613rem;
     height: 3.75756rem;
    }
-   p{
-    color: #FFF;
-    font: {
-        size: 1.5rem;
-        weight: 600;
-    }
-    margin: 0;
-    }
+   @extend .LandingButtonTxt;
 }
 .Advantages{
     display: flex;
@@ -334,9 +340,11 @@ footer{
     width: 100%;
 }
 #FooterButton{
+   @extend .Buttons; 
    border-radius: 13px;
    height: 39px;
    width: 166px;
+   @extend .LandingButtonTxt;
 }
 /*Для корректного отображение на планшете горизонтально*/
 @media screen and (max-width: 1114px) and (orientation: landscape){
