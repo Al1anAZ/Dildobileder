@@ -296,6 +296,12 @@ footer {
   .Landing {
     height: 100vh;
   }
+  .LandingText h1 {
+    font-size: 75px;
+  }
+  .LandingText p {
+    font-size: 25px;
+  }
   .FooterNavigation {
     display: none;
   }
@@ -304,12 +310,6 @@ footer {
   }
   .FooterNavigation span {
     text-align: center;
-  }
-  .LandingText h1 {
-    font-size: 75px;
-  }
-  .LandingText p {
-    font-size: 25px;
   }
   .FooterBottom {
     flex-direction: column;
@@ -345,6 +345,12 @@ footer {
   .FooterNavigation {
     display: none;
   }
+  .FooterNavigation img {
+    margin: auto;
+  }
+  .FooterNavigation span {
+    text-align: center;
+  }
   .FooterBottom {
     flex-direction: column;
   }
@@ -370,9 +376,6 @@ footer {
   .Service h1 {
     font-size: 20px;
   }
-  .HeaderContainer ul {
-    display: none;
-  }
   .LandingElements {
     padding-bottom: 0;
   }
@@ -389,8 +392,17 @@ footer {
   .OurServices > hr {
     max-width: 300px;
   }
+  .HeaderContainer ul {
+    display: none;
+  }
   .FooterNavigation {
     display: none;
+  }
+  .FooterNavigation img {
+    margin: auto;
+  }
+  .FooterNavigation span {
+    text-align: center;
   }
   .FooterBottom {
     flex-direction: column;
@@ -433,6 +445,15 @@ footer {
   .HeaderContainer ul {
     display: none;
   }
+  .FooterNavigation {
+    display: none;
+  }
+  .FooterNavigation img {
+    margin: auto;
+  }
+  .FooterNavigation span {
+    text-align: center;
+  }
   .FooterBottom {
     flex-direction: column;
   }
@@ -441,6 +462,9 @@ footer {
   }
   .FooterBottom span {
     text-align: center;
+  }
+  #FooterButton {
+    display: none;
   }
 }
 

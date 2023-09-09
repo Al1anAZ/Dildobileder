@@ -1,5 +1,35 @@
 $Ubuntu : "Ubuntu",sans-serif;
 $Roboto : "Roboto",sans-serif;
+@mixin ChangeFooter{
+    .FooterNavigation{
+        display: none;
+        img{
+            margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    .FooterBottom{
+        flex-direction: column;
+        img{
+        margin: auto;
+        }
+        span{
+            text-align: center;
+        }
+    }
+    #FooterButton{
+        display: none;
+    }
+}
+@mixin HeaderNavHide{
+    .HeaderContainer{
+        ul{
+        display: none;
+    }
+   }
+}
 *{
     font-family: "Inter", sans-serif;
     font-size: 100%;
@@ -308,21 +338,11 @@ footer{
    height: 39px;
    width: 166px;
 }
-
 /*Для корректного отображение на планшете горизонтально*/
 @media screen and (max-width: 1114px) and (orientation: landscape){
     .Landing{
         height: 100vh;
      }
-    .FooterNavigation{
-        display: none;
-        img{
-            margin: auto;
-        }
-        span{
-            text-align: center;
-        }
-    }
     .LandingText{ 
         h1{
         font-size: 75px
@@ -331,18 +351,7 @@ footer{
             font-size: 25px;
         }
     }
-    .FooterBottom{
-        flex-direction: column;
-        img{
-        margin: auto;
-        }
-        span{
-            text-align: center;
-        }
-    }
-    #FooterButton{
-        display: none;
-    }
+    @include ChangeFooter();
 }
 /*Для корректного отображение при сжатии окна*/
 @media screen  and (min-width:  1024px) and (max-height: 900px){
@@ -366,22 +375,7 @@ footer{
         font-size: 20px;
        } 
     }
-    .FooterNavigation{
-        display: none;
-    }
-    .FooterBottom{
-        flex-direction: column;
-        img{
-        margin: auto;
-        }
-        span{
-            text-align: center;
-        }
-    }
-    #FooterButton{
-        display: none;
-    }
-    
+    @include ChangeFooter();
 }
 /*Для корректного отображение на телефоне вертикально*/ 
 @media screen and (max-width: 600px) and (orientation: portrait){
@@ -395,11 +389,6 @@ footer{
         font-size: 20px;
         }
     }
-     .HeaderContainer {   
-        ul{
-        display: none;
-        }
-     }
      .LandingElements{
         padding-bottom: 0;
      }
@@ -420,21 +409,8 @@ footer{
         max-width: 300px;
         }
     }
-    .FooterNavigation{
-        display: none;
-    }
-    .FooterBottom{
-        flex-direction: column;
-        img{
-            margin: auto;
-        }
-        span{
-            text-align: center;
-        }
-    }
-    #FooterButton{
-        display: none;
-    }
+    @include HeaderNavHide();
+    @include ChangeFooter();
 }
 /*Для корректного отображение на телефоне горизонтально*/
 @media screen  and (max-width:  1023px) and (orientation: landscape){
@@ -465,19 +441,6 @@ footer{
             font-size: 20px;
         }
     }
-    .HeaderContainer{
-        ul{
-        display: none;
-         }
-
-     }
-     .FooterBottom{
-        flex-direction: column;
-        img{
-            margin: auto;
-        }
-        span{
-            text-align: center;
-        }
-    }
+     @include HeaderNavHide();
+     @include ChangeFooter();
 }
