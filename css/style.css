@@ -9,7 +9,7 @@
 }
 
 .LandingButtonTxt p, #FooterButton p, .LandingButtons p {
-  color: #FFF;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
@@ -20,7 +20,8 @@
   font-size: 100%;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -32,7 +33,7 @@ header {
 }
 
 footer {
-  background: linear-gradient(135deg, #402E32 0%, #231F20 100%);
+  background: linear-gradient(135deg, #402e32 0%, #231f20 100%);
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -117,7 +118,7 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  background: linear-gradient(315deg, #402E32 0%, #2E2E2E 100%);
+  background: linear-gradient(315deg, #402e32 0%, #2e2e2e 100%);
 }
 .Advantages > div {
   padding-bottom: 100px;
@@ -163,7 +164,7 @@ footer {
 }
 .OurServices > p {
   margin: 0;
-  color: #231F20;
+  color: #231f20;
   font-family: "Ubuntu", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -218,7 +219,7 @@ footer {
   font-size: 30px;
   font-weight: 900;
   margin-top: 2.083vw;
-  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 86%);
+  background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 86%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -243,7 +244,7 @@ footer {
 .FooterContacts h1 {
   font-size: 32px;
   font-weight: 600;
-  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 40%);
+  background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 40%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -261,7 +262,7 @@ footer {
 .FooterNavigation h1 {
   font-size: 32px;
   font-weight: 600;
-  background: -webkit-linear-gradient(20deg, #FF9929 0%, #FC8AC8 90%);
+  background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -271,7 +272,7 @@ footer {
   margin-bottom: 10px;
 }
 .FooterNavigation a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   line-height: 11px;
   font-family: "Roboto", sans-serif;
@@ -283,8 +284,8 @@ footer {
 .FooterBottom {
   display: flex;
   flex-direction: row;
-  border-top: #FFF solid 1px;
-  color: #FFF;
+  border-top: #fff solid 1px;
+  color: #fff;
   padding: 25px 0px 30px 0px;
   width: 100%;
 }
