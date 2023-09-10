@@ -1,0 +1,24 @@
+.HeaderContainer {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    ul {
+        list-style-type: none;
+        display: inline;
+    }
+    li {
+        float: right;
+        margin-right: 1vw;
+        margin-top: 16px;
+    }
+    li:first-child {
+        margin-right: 6.72vw;
+    }
+    a {
+        font-size: 1.25em;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+}

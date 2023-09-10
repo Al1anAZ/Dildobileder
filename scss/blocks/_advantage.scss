@@ -1,0 +1,46 @@
+.Advantages {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background: linear-gradient(315deg, #402e32 0%, #2e2e2e 100%);
+    > div {
+        padding-bottom: 100px;
+        margin: auto;
+        min-height: 395px;
+        max-width: 64.635vw;
+        display: flex;
+        flex: {
+            wrap: wrap;
+            grow: 1;
+        }
+    }
+}
+.Advantage {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0px;
+    width: 412px;
+    text-align: center;
+    color: #fff;
+    p {
+        margin: 0;
+        margin-top: 7px;
+        font: {
+            family: $Roboto;
+            weight: 300;
+            size: 20px;
+        }
+    }
+    h1 {
+        margin-bottom: 0;
+        font: {
+            size: 24px;
+            family: $Ubuntu;
+        }
+    }
+    img {
+        margin: auto;
+        width: 80px;
+        height: 80px;
+    }
+}

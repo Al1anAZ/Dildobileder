@@ -1,0 +1,65 @@
+$Ubuntu: "Ubuntu", sans-serif;
+$Roboto: "Roboto", sans-serif;
+@mixin ChangeFooter {
+    .FooterNavigation {
+        display: none;
+        img {
+            margin: auto;
+        }
+        span {
+            text-align: center;
+        }
+    }
+    .FooterBottom {
+        flex-direction: column;
+        img {
+            margin: auto;
+        }
+        span {
+            text-align: center;
+        }
+    }
+    #FooterButton {
+        display: none;
+    }
+}
+@mixin HeaderNavHide {
+    .HeaderContainer {
+        ul {
+            display: none;
+        }
+    }
+}
+.Buttons {
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, rgba(255, 153, 41, 1) 0%, rgba(252, 138, 200, 1) 100%);
+}
+.ButtonTxt {
+    p {
+        color: #fff;
+        font: {
+            size: 1.5rem;
+            weight: 600;
+        }
+        margin: 0;
+    }
+}
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+@import "./blocks/_header.scss";
+@import "./blocks/_landing.scss";
+@import "./blocks/_advantage.scss";
+@import "./blocks/_services.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_mediarequests.scss";

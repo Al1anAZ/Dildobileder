@@ -1,0 +1,83 @@
+.OurServices {
+    display: block;
+    max-width: 100%;
+    background: #fff;
+    text-align: center;
+    > p {
+        margin: 0;
+        color: #231f20;
+        font: {
+            family: $Ubuntu;
+            size: 40px;
+            style: normal;
+            weight: 700;
+        }
+        line-height: normal;
+    }
+    > hr {
+        max-width: 400px;
+        margin-top: 60px;
+    }
+}
+.OurServicesArea {
+    padding-top: 50px;
+    margin: 0px 5.208vw 0px 5.208vw;
+    display: flex;
+    flex-flow: wrap row;
+}
+.Service {
+    box-shadow: 0px 4px 7px rgba(129, 128, 128, 0.315);
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 400.662px;
+    border-radius: 5px;
+    text-align: center;
+    span {
+        padding-bottom: 25px;
+    }
+    h1 {
+        font: {
+            family: $Ubuntu;
+            size: 24px;
+        }
+        padding-bottom: 0px;
+        margin-bottom: 0;
+        margin-top: 2.083vw;
+    }
+    p {
+        font: {
+            family: $Roboto;
+            size: 20px;
+            weight: 300;
+        }
+        padding-bottom: 0px;
+        width: 330px;
+        height: 72px;
+        margin: auto;
+        margin-top: 5px;
+    }
+}
+#ServiceContentGradient {
+    font: {
+        family: $Roboto;
+        size: 30px;
+        weight: 900;
+    }
+    margin-top: 2.083vw;
+    background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#Moretext {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: {
+        family: $Ubuntu;
+        size: 28px;
+        weight: 300;
+    }
+    color: rgba(122, 122, 122, 1);
+}

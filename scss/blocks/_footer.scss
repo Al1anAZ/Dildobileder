@@ -1,0 +1,80 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+footer {
+    background: linear-gradient(135deg, #402e32 0%, #231f20 100%);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.FooterContainer {
+    padding-top: 30px;
+    margin: 0px 16vw 0px 16vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FooterContacts {
+    h1 {
+        font: {
+            size: 32px;
+            weight: 600;
+        }
+        background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 40%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        color: white;
+        font: {
+            family: $Roboto;
+            size: 20px;
+            weight: 300;
+        }
+    }
+}
+.FooterNavigation {
+    margin-left: auto;
+    h1 {
+        font: {
+            size: 32px;
+            weight: 600;
+        }
+        background: -webkit-linear-gradient(20deg, #ff9929 0%, #fc8ac8 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    > div {
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 11px;
+        font: {
+            family: $Roboto;
+            size: 20px;
+            weight: 300;
+        }
+        text-align: right;
+    }
+}
+.FooterBottom {
+    display: flex;
+    flex-direction: row;
+    border-top: #fff solid 1px;
+    color: #fff;
+    padding: 25px 0px 30px 0px;
+    width: 100%;
+}
+#FooterButton {
+    @extend .Buttons;
+    border-radius: 13px;
+    height: 39px;
+    width: 166px;
+    @extend .ButtonTxt;
+}

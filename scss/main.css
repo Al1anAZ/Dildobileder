@@ -8,7 +8,7 @@
   background: linear-gradient(90deg, rgb(255, 153, 41) 0%, rgb(252, 138, 200) 100%);
 }
 
-.LandingButtonTxt p, #FooterButton p, .LandingButtons p {
+.ButtonTxt p, #FooterButton p, .LandingButtons p {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
@@ -24,19 +24,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-footer {
-  background: linear-gradient(135deg, #402e32 0%, #231f20 100%);
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
 }
 
 .HeaderContainer {
@@ -232,6 +219,19 @@ footer {
   font-size: 28px;
   font-weight: 300;
   color: rgb(122, 122, 122);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+footer {
+  background: linear-gradient(135deg, #402e32 0%, #231f20 100%);
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
 .FooterContainer {
@@ -471,6 +471,4 @@ footer {
   #FooterButton {
     display: none;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
