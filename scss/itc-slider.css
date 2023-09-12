@@ -1,7 +1,7 @@
 .itc-slider {
   padding-bottom: 80px;
   margin: auto;
-  max-width: 1270px;
+  max-width: 345px;
   position: relative;
 }
 
@@ -131,6 +131,12 @@
 
 /* на больших экранах (ширина больше 1200px) 3 слайда */
 @media (min-width: 1200px) {
+  .itc-slider{
+    max-width: 1270px;
+  }
+  .itc-slider-btn img{
+    content: url("../img/slider/arrow-square.svg");
+  }
   .itc-slider-btn{
     background: transparent;
   }

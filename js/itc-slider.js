@@ -124,7 +124,6 @@ class ItcSlider {
       this.getOrCreateInstance(el, params);
     });
   }
-
   slideNext() {
     this.#state.direction = 'next';
     this.#move();
