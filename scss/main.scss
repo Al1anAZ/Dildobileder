@@ -30,6 +30,17 @@ $Roboto: "Roboto", sans-serif;
         }
     }
 }
+@mixin ChangeAbout{
+    .About{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px
+        }
+    }
+}
 .Buttons {
     cursor: pointer;
     margin: auto;
