@@ -121,14 +121,20 @@
 .itc-slider-indicator-active {
   background-color: rgb(255 255 255 / 90%);
 }
+@media (max-width: 768px)  and (orientation: landscape){
+  .itc-slider{
+    max-width: 400px;
+  }
+}
 /* на средних экранах (ширина больше 768px) 2 слайда */
 @media (min-width: 768px) {
+  .itc-slider{
+    max-width: 700px;
+  }
   .itc-slider-item {
     flex: 0 0 50%;
-  }
-  
+  } 
 }
-
 /* на больших экранах (ширина больше 1200px) 3 слайда */
 @media (min-width: 1200px) {
   .itc-slider{
