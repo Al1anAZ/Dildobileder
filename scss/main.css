@@ -296,6 +296,59 @@ footer {
   width: 166px;
 }
 
+.About {
+  width: 100%;
+  background: linear-gradient(101deg, rgba(252, 138, 200, 0.1) 0%, rgba(255, 153, 41, 0.1) 100%);
+}
+.About h1 {
+  margin-bottom: 0;
+  padding-top: 33px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.AboutText {
+  max-width: 1241px;
+  margin: auto;
+}
+.AboutText p {
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.SliderContainer {
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid black;
+  max-width: 1350px;
+  height: 45%;
+}
+.SliderContainer button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  background: none;
+  height: 65px;
+  width: 65px;
+  background-image: url("../img/slider/arrow-square.svg");
+}
+.SliderContainer > div {
+  display: flex;
+  justify-content: center;
+}
+
+.Slide {
+  transition: transform 0.5s ease-in-out;
+  margin-right: 5px;
+}
+.Slide img {
+  width: 21.406vw;
+  height: 16.042vw;
+}
+
 /*Для корректного отображение на планшете горизонтально*/
 @media screen and (max-width: 1114px) and (orientation: landscape) {
   .Landing {
@@ -397,6 +450,13 @@ footer {
   .OurServices > hr {
     max-width: 300px;
   }
+  .About h1 {
+    font-size: 30px;
+  }
+  .About p {
+    text-align: center;
+    font-size: 20px;
+  }
   .HeaderContainer ul {
     display: none;
   }
@@ -445,6 +505,13 @@ footer {
     font-size: 45px;
   }
   .LandingText p {
+    font-size: 20px;
+  }
+  .About h1 {
+    font-size: 30px;
+  }
+  .About p {
+    text-align: center;
     font-size: 20px;
   }
   .HeaderContainer ul {

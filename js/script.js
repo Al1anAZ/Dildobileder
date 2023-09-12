@@ -1,5 +1,4 @@
 "use strict";
-
 window.addEventListener(`scroll`, () =>{
     let Header = document.querySelector('.HeaderContainer');
     (document.documentElement.scrollTop > 0) ? Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)" : Header.style.backgroundColor = "transparent";

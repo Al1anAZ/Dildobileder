@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./scss/itc-slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&family=Roboto:wght@300;600;900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;900&family=Roboto:wght@300;600;900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body> 
   <header>
-    <div class="HeaderContainer">
+    <nav>
+      <div class="HeaderContainer">
         <img src="./img/Logo.svg" alt="Logo" style="margin-top: 16px; margin-left: 6.72vw;">
         <ul>
           <li><a href="index.html">Послуги</a></li>
@@ -21,6 +23,7 @@
           <li><a href="index.html">Про нас</a></li>
          </ul>
     </div>
+    </nav>
   </header>
   <main>
     <!-------------------------------Landing(Photo,Text)----------------------------------->
@@ -153,6 +156,52 @@
     </div>
 </section>
      <!-- ----------------------------EndExtraServices-------------------------------->
+<section>
+  <div class="About">
+    <h1>Про DildoBuilder</h1>
+    <div class="AboutText">
+      <p>Ми - компанія, яка виникла в період війни в Україні,
+         і наша головна мета - відновлення постраждалої Батьківщини. У "DildoBuilder" 
+         ми покладаємося на високі стандарти якості, які є фундаментом нашої діяльності.
+          Ми гарантуємо, що кожен проект буде виконаний вчасно та з найвищою якістю, щоб
+           ви могли не хвилюватися про свою домівку або підприємство. Наші експерти зроблять
+            усе можливе, щоб забезпечити успішну реалізацію вашого завдання.</p>
+        <p>
+          У нашій роботі ми використовуємо передове європейське обладнання та підходи,
+           що дозволяє нам реалізувати проекти з ефективністю та якістю на міжнародному рівні. 
+           Ми впевнені, що з нашим досвідом та здібностями, ми зможемо допомогти зробити 
+           Україну краще, а вашу домівку затишніше.
+        </p>
+        <div class="itc-slider"  data-slider="itc-slider">
+          <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 17.svg" alt="slider_img_1">
+              </div>
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 18.svg" alt="slider_img_1">
+              </div>
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 19.svg" alt="slider_img_1">
+              </div>
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 17.svg" alt="slider_img_1">
+              </div>
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 18.svg" alt="slider_img_1">
+              </div>
+              <div class="itc-slider-item">
+                <img src="./img/slider/photos/image 19.svg" alt="slider_img_1">
+              </div>
+            </div>
+          </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="itc-slider-btn itc-slider-btn-prev"><img src="./img/slider/arrow-square.svg" alt="arrowprev" style="transform: rotate(180deg);"></button>
+          <button class="itc-slider-btn itc-slider-btn-next"><img src="./img/slider/arrow-square.svg" alt="arrownext"></button>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 <footer>
 <div class="FooterContainer">
@@ -178,4 +227,5 @@
   </div>
 </footer>
 <script src="./js/script.js"></script>
+<script src="./js/itc-slider.js" defer></script>
 </html>
