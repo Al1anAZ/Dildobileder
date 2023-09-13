@@ -25,9 +25,12 @@ $Roboto: "Roboto", sans-serif;
 }
 @mixin HeaderNavHide {
     .HeaderContainer {
-        ul {
+        >ul {
             display: none;
         }
+    }
+    .hamburger-menu{
+        display: block;
     }
 }
 @mixin ChangeAbout{

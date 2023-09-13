@@ -101,8 +101,7 @@
         p {
             font-size: 20px;
         }
-    }
-    
+    }  
     @include ChangeAbout();
     @include HeaderNavHide();
     @include ChangeFooter();
