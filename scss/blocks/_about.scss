@@ -23,33 +23,3 @@
             }
         } 
 }
-.SliderContainer{
-    overflow: hidden;
-    margin: auto;
-    border:  5px solid black;
-    max-width: 1350px;
-    height: 45%;
-    button{
-        float: right;
-        cursor: pointer;
-        border: none;
-        background: none;
-        height: 65px;
-        width: 65px;
-        background-image: url("../img/slider/arrow-square.svg");
-    }
-    >div{
-       display: flex;
-       justify-content: center;
-    }
-}
-.Slide{
-    transition: transform 0.5s ease-in-out;
-    margin: {
-        right: 5px;
-    }
-    img{
-        width: 21.406vw;
-        height: 16.042vw;
-    }
-}

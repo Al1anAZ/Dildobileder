@@ -20,6 +20,8 @@
     }
 }
 .OurServicesArea {
+    transition: opacity 1s;
+    transition-delay: 100s;
     padding-top: 50px;
     margin: 0px 5.208vw 0px 5.208vw;
     display: flex;
@@ -80,4 +82,13 @@
         weight: 300;
     }
     color: rgba(122, 122, 122, 1);
+}
+#ShowOrHideExtraServButton{
+    transition: transform 1s;
+}
+#ExtraServices{
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: height 500ms ease, opacity 1s;
 }

@@ -164,6 +164,8 @@ body {
 }
 
 .OurServicesArea {
+  transition: opacity 1s;
+  transition-delay: 100s;
   padding-top: 50px;
   margin: 0px 5.208vw 0px 5.208vw;
   display: flex;
@@ -219,6 +221,17 @@ body {
   font-size: 28px;
   font-weight: 300;
   color: rgb(122, 122, 122);
+}
+
+#ShowOrHideExtraServButton {
+  transition: transform 1s;
+}
+
+#ExtraServices {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  transition: height 500ms ease, opacity 1s;
 }
 
 header {
@@ -317,36 +330,6 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 300;
-}
-
-.SliderContainer {
-  overflow: hidden;
-  margin: auto;
-  border: 5px solid black;
-  max-width: 1350px;
-  height: 45%;
-}
-.SliderContainer button {
-  float: right;
-  cursor: pointer;
-  border: none;
-  background: none;
-  height: 65px;
-  width: 65px;
-  background-image: url("../img/slider/arrow-square.svg");
-}
-.SliderContainer > div {
-  display: flex;
-  justify-content: center;
-}
-
-.Slide {
-  transition: transform 0.5s ease-in-out;
-  margin-right: 5px;
-}
-.Slide img {
-  width: 21.406vw;
-  height: 16.042vw;
 }
 
 /*Для корректного отображение на планшете горизонтально*/
