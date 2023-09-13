@@ -85,10 +85,12 @@
 }
 #ShowOrHideExtraServButton{
     transition: transform 1s;
+    -webkit-transition: transition 1s;
 }
 #ExtraServices{
     overflow: hidden;
     opacity: 0;
     height: 0;
     transition: height 500ms ease, opacity 1s;
+    -webkit-transition: height 500ms ease, opacity 1s;
 }
