@@ -31,4 +31,7 @@ BurgerTogle.addEventListener(`click`, ()=>{
 })
 window.addEventListener(`scroll`, () =>{
     (document.documentElement.scrollTop > 0) ? Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)" : Header.style.backgroundColor = "transparent";
+    if(BurgerTogle.checked )
+      Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)"
+
 });
