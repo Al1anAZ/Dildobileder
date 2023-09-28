@@ -26,12 +26,13 @@ ShowOrHideExtraServButton.addEventListener("click", () => {
     }
 });
 BurgerTogle.addEventListener(`click`, ()=>{
-   BurgerTogle.checked ? Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)" : false;
+   if(BurgerTogle.checked)
+   Header.setAttribute(`data-change-header`, `moved`);
       
 })
 window.addEventListener(`scroll`, () =>{
-    (document.documentElement.scrollTop > 0) ? Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)" : Header.style.backgroundColor = "transparent";
+    (document.documentElement.scrollTop > 0) ? Header.setAttribute(`data-change-header`, `moved`) : Header.setAttribute(`data-change-header`, `static`);
     if(BurgerTogle.checked )
-      Header.style.backgroundColor = "rgba(35, 31, 32, 0.95)"
+    Header.setAttribute(`data-change-header`, `moved`)
 
 });

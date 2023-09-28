@@ -1,8 +1,13 @@
-.HeaderContainer {
+.HeaderContainer{
+  position: absolute;
+  width: 100%;
+  height: 56px;
+}
+.HeaderContainer[data-change-header=static]{
     background-color: transparent;
-    position: absolute;
-    width: 100%;
-    height: 56px;
+}
+.HeaderContainer[data-change-header=moved]{
+  background-color: rgba(35, 31, 32, 0.95);
 }
 .navbar{
         list-style-type: none;
