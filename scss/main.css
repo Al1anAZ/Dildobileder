@@ -26,33 +26,30 @@ body {
   padding: 0;
 }
 
-.HeaderContainer {
+nav {
   position: absolute;
   width: 100%;
   height: 56px;
 }
-
-.HeaderContainer[data-change-header=static] {
+nav[data-change-header=static] {
   background-color: transparent;
 }
-
-.HeaderContainer[data-change-header=moved] {
+nav[data-change-header=moved] {
   background-color: rgba(35, 31, 32, 0.95);
 }
-
-.navbar {
+nav > ul {
   list-style-type: none;
   display: inline;
 }
-.navbar li {
+nav > ul li {
   float: right;
   margin-right: 1vw;
   margin-top: 16px;
 }
-.navbar li:first-child {
+nav > ul li:first-child {
   margin-right: 6.72vw;
 }
-.navbar a {
+nav > ul a {
   font-size: 1.25em;
   font-weight: 300;
   color: white;
@@ -546,7 +543,7 @@ footer {
     text-align: center;
     font-size: 20px;
   }
-  .HeaderContainer > ul {
+  nav > ul {
     display: none;
   }
   .hamburger-menu {
@@ -606,7 +603,7 @@ footer {
     text-align: center;
     font-size: 20px;
   }
-  .HeaderContainer > ul {
+  nav > ul {
     display: none;
   }
   .hamburger-menu {

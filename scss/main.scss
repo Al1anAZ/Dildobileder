@@ -24,7 +24,7 @@ $Roboto: "Roboto", sans-serif;
     }
 }
 @mixin HeaderNavHide {
-    .HeaderContainer {
+    nav{
         >ul {
             display: none;
         }
