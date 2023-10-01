@@ -11,15 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;900&family=Roboto:wght@300;600;900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body> 
+<body id="Top"> 
   <header>
     <nav data-change-header="static">
-        <img src="./img/Logo.svg" alt="Logo" style="margin-top: 16px; margin-left: 6.72vw;">
+      <a href="#Top">
+        <img src="./img/Logo.svg" alt="Logo" style="margin-top: 16px; margin-left: 6.72vw; cursor: pointer;">
+      </a>
         <ul>
-          <li><a href="index.html">Послуги</a></li>
-          <li><a href="index.html">Ціни</a></li>
-          <li><a href="index.html">Контакти</a></li>
-          <li><a href="index.html">Про нас</a></li>
+          <li><a href="#Service">Послуги</a></li>
+          <li><a href="#Service">Ціни</a></li>
+          <li><a href="#Footer">Контакти</a></li>
+          <li><a href="#ShowOrHideExtraServButton">Про нас</a></li>
          </ul>
          <div class="hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
@@ -27,10 +29,10 @@
             <span></span>
           </label>
           <ul class="menu__box">
-            <li><a href="index.html">Про нас</a></li>
-            <li><a href="index.html">Контакти</a></li>
-            <li><a href="index.html">Ціни</a></li>
-            <li><a href="index.html">Послуги</a></li>
+            <li><a href="#ShowOrHideExtraServButton">Про нас</a></li>
+            <li><a href="#Footer">Контакти</a></li>
+            <li><a href="#Service">Ціни</a></li>
+            <li><a href="#Service">Послуги</a></li>
           </ul>
         </div>
     </nav>
@@ -48,7 +50,9 @@
       <div class="LandingButtons">
           <button><p>Замовити</p></button>
           </div>
-           <img src="./img/ArrowDown.svg" alt="ArrowDown">
+          <a href="#Advantage" id="Advantage">
+            <img src="./img/ArrowDown.svg" alt="ArrowDown">
+          </a>
     </div>
   </div>
   </div>
@@ -91,6 +95,7 @@
        </div>
 </section>
      <!-------------------------------Services----------------------------------->
+     <span id="Service"></span>
 <section>
       <div class="OurServices">
         <hr>
@@ -212,7 +217,7 @@
 </section>
   </main>
 <footer>
-<div class="FooterContainer">
+<div class="FooterContainer" id="Footer">
   <div class="FooterContacts">
     <h1>Контакти:</h1>
     <p><img src="./img/call-calling.svg" alt="" style=" vertical-align: middle;"><span style="font-weight: 600; margin-left: 7px;">Phone:</span> <span style="white-space: nowrap">(+380) 98-511-00-00</span></p>
@@ -221,11 +226,11 @@
   </div>
   <div class="FooterNavigation">
     <h1>Навігація:</h1>
-    <div><a href="">Головна</a></div>
-    <div><a href="">Контакти</a></div>
-    <div><a href="">Послуги</a></div>
-    <div><a href="">Ціни</a></div>
-    <div><a  href="">Про нас</a></div>
+    <div><a href="#Top">Головна</a></div>
+    <div><a href="#Footer">Контакти</a></div>
+    <div><a href="#Service">Послуги</a></div>
+    <div><a href="#Service">Ціни</a></div>
+    <div><a  href="#ShowOrHideExtraServButton">Про нас</a></div>
   </div>
   <div class="FooterBottom"> 
 <img src="./img/Logo.svg" alt="" height="42px" width="269px">
